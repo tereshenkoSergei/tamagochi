@@ -2,7 +2,6 @@ package sample.java;
 
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Parent;
@@ -11,10 +10,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
-
-import static java.lang.Thread.onSpinWait;
-import static java.lang.Thread.sleep;
 
 //класс, отвечающий за обработку конца игры и сброс прогресса
 public class GameOver extends Application implements Runnable {
@@ -42,7 +37,6 @@ public class GameOver extends Application implements Runnable {
         CheckPoint checkPoint = CheckPoint.load();
         checkPoint.isGone = true;
         checkPoint.save();
-        System.out.println(CheckPoint.load());
 
         primaryStage.setOnCloseRequest(windowEvent -> Platform.exit());
     }
@@ -62,7 +56,7 @@ public class GameOver extends Application implements Runnable {
     }
 
     @Override
-    public void stop() throws Exception {
+    public void stop() {
         Platform.exit();
     }
 }

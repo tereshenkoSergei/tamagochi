@@ -25,7 +25,6 @@ public class ResHandler {
 
             case NORMAL:
                 return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "calm.png")));
-
             case SAD:
                 return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "sad.png")));
             case EATING:
@@ -36,6 +35,16 @@ public class ResHandler {
                 return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "present.png")));
             case BROKEN:
                 return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "broken.png")));
+            case UNHAPPY:
+                return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "unhappy.png")));
+            case WATCHING:
+                return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "watching.png")));
+            case PLAYING1:
+                return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "playing1.png")));
+            case PLAYING2:
+                return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "playing2.png")));
+            case PLAYING3:
+                return (new Image(resHandler.getClass().getResourceAsStream(SPRITE_PATH + "playing3.png")));
         }
         return null;
     }

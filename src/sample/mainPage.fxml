@@ -7,50 +7,113 @@
 <?import javafx.scene.layout.Pane?>
 
 
-<Pane maxHeight="-Infinity"  maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="600.0"
-
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0"
+      prefWidth="600.0"
 
 
       xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <ImageView fx:id="bdImage" fitHeight="336.0" fitWidth="628.0" layoutX="1.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image  url="@../resources/sprites/bg/bg.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="animalImage" fitHeight="128.0" fitWidth="128.0" layoutX="234.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
-<!--         <image>-->
-<!--            <Image url="@../resources/sprites/cat/calm.png" />-->
-<!--         </image>-->
-      </ImageView>
-      <ProgressBar fx:id="moodPB" layoutX="8.0" layoutY="14.0" mouseTransparent="true" opacity="0.7" prefWidth="200.0" progress="0.7" />
-      <ProgressBar fx:id="foodPB" layoutX="8.0" layoutY="55.0" opacity="0.7" prefWidth="200.0" progress="0.7"  />
-      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="218.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../resources/sprites/other/mood.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="218.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../resources/sprites/other/food.jpg" />
-         </image>
-      </ImageView>
-
-      <Button fx:id="toShopButton" layoutX="14.0" layoutY="272.0"
-              mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="В магазин"
-
-
-      />
-      <Button fx:id="walkButton" layoutX="14.0" layoutY="309.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Погулять" />
-      <Button fx:id="feedButton" layoutX="14.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Покормить" />
-      <ImageView fx:id="foodPlaceImage" fitHeight="71.0" fitWidth="85.0" layoutX="398.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" />
-
-
-       <ImageView fx:id="goodFood" fitHeight="80.0" fitWidth="80.0" layoutX="495.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true"/>
-       <ImageView fx:id="regularGood" fitHeight="80.0" fitWidth="80.0" layoutX="495.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true"/>
-       <ImageView fx:id="badFood" fitHeight="80.0" fitWidth="80.0" layoutX="495.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true"/>
+    <children>
+        <ImageView fx:id="bdImage" fitHeight="350.0" fitWidth="600.0" layoutX="1.0" layoutY="11.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image >
+                <Image url="@../resources/sprites/bg/bg.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="animalImage" fitHeight="128.0" fitWidth="128.0" layoutX="234.0" layoutY="150.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <!--         <image>-->
+            <!--            <Image url="@../resources/sprites/cat/calm.png" />-->
+            <!--         </image>-->
+        </ImageView>
+        <ProgressBar fx:id="moodPB" layoutX="8.0" layoutY="14.0" mouseTransparent="true" opacity="0.7" prefWidth="200.0"
+                     progress="0.7"/>
+        <ProgressBar fx:id="foodPB" layoutX="8.0" layoutY="55.0" opacity="0.7" prefWidth="200.0" progress="0.7"/>
+        <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="218.0" layoutY="11.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../resources/sprites/other/mood.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="218.0" layoutY="51.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../resources/sprites/other/food.jpg"/>
+            </image>
+        </ImageView>
 
 
 
-   </children>
+        <ImageView fx:id="foodPlaceImage" fitHeight="71.0" fitWidth="85.0" layoutX="398.0" layoutY="249.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+
+
+        <ImageView fx:id="goodFood" fitHeight="80.0" fitWidth="80.0" layoutX="495.0" layoutY="45.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+        <ImageView fx:id="regularGood" fitHeight="80.0" fitWidth="80.0" layoutX="495.0" layoutY="125.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <ImageView fx:id="badFood"  fitHeight="80.0" fitWidth="80.0" layoutX="495.0" layoutY="221.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+
+
+        <ImageView fx:id="toyImageView" fitHeight="88.0" fitWidth="104.0" layoutX="14.0" layoutY="99.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+
+        <ImageView fx:id="toysImageView" fitHeight="88.0" fitWidth="104.0" layoutX="6.0" layoutY="216.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+
+
+
+
+        <ImageView fx:id="coin1" fitHeight="31.0" fitWidth="39.0" layoutX="434.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/sprites/other/coin.png" />
+            </image>
+        </ImageView>
+
+
+        <ImageView fx:id="coin2" fitHeight="31.0" fitWidth="39.0" layoutX="434.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/sprites/other/coin.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="coin3" fitHeight="31.0" fitWidth="39.0" layoutX="434.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/sprites/other/coin.png" />
+            </image>
+        </ImageView>
+
+
+        <ImageView  fitHeight="31.0" fitWidth="39.0" layoutX="245.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/sprites/other/coin.png" />
+            </image>
+        </ImageView>
+
+
+        <Label fx:id="food8" layoutX="471.0" layoutY="44.0" prefHeight="17.0" textFill="WHITE" prefWidth="25.0" text="8">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label fx:id="food4" layoutX="471.0" layoutY="130.0" prefHeight="17.0" textFill="WHITE" prefWidth="25.0" text="4">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label fx:id="food0" layoutX="471.0" layoutY="229.0" prefHeight="17.0" prefWidth="25.0" textFill="WHITE" text="0">
+            <font>
+                <Font size="28.0"  />
+            </font>
+        </Label>
+        <Label fx:id="currCoins" layoutX="275.0" layoutY="4.0" prefHeight="17.0" prefWidth="35.0" textFill="WHITE" text="10">
+            <font>
+                <Font size="28.0"  />
+            </font>
+        </Label>
+
+
+    </children>
 </Pane>

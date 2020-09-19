@@ -338,11 +338,13 @@ public class Main extends Application {
 
 
     //второстепенные элементы, которые можно скрыть при необходимости: изображения монет и стоимости еды
-    private Label food8, food4, food0;
     private ImageView coin1, coin2, coin3;
+    private Label food8, food4, food0;
 
     //иницилизирует переменные, которые используются в процессе игры.
     private void initVariables(Scene scene) {
+
+
 
         //загрузка последнего сохранения из файла
         checkPoint = CheckPoint.load();
